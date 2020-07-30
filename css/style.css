@@ -1,0 +1,144 @@
+@import	url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*General Styles*/
+* {
+    box-sizing: border-box;
+}
+
+html{
+	font-family: 'Alegreya SC', sans-serif;
+	font-size: 16px;
+	background: #fff;
+	color: #004FFF;
+}
+
+body{
+	color: #004FFF;
+	margin: 0;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	box-shadow:  10px 10px 10px #00000045;
+}
+
+h1, legend{
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+/*Header styles*/
+
+#header {
+    padding: 15px 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 5px 5px 10px #dc0000;
+}
+
+#header a, .buttons button{
+	color: #004FFF;
+    margin-right: 10px;
+    padding: 10px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px #004FFF;
+}
+
+.buttons button#active-button{
+	box-shadow: inset 0px 0px 2px 0px #004FFF;
+}
+
+#header a:hover, .buttons button:hover{
+	box-shadow: inset 0px 0px 2px 0px #004FFF;
+}
+/*Footer styles*/
+#footer{
+	padding: 0 5%;
+    color: #004FFF;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+#footer ul li{
+    display: inline-flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#footer ul li a i{
+	font-size: 1.5rem;
+}
+
+#footer a{
+	color: #004FFF;
+}
+#footer p{
+	color: #004FFF;
+}
+#footer h3{
+	color: #004FFF;
+}
+
+
+.masthead{
+	background-image: url('../img/bg.jpg');
+	background-size: contain;
+	color: #004FFF;
+}
+.main-content{
+	max-width: 60rem;
+    padding: 2rem;
+    margin: 0 5%;
+    background-color: #eee;
+}
+
+
+
+
+/*Media Queries*/
+
+@media (min-width: 60rem) {
+	body{
+		font-size: 1.5rem;
+	}
+
+	.main-content{
+	    margin: 0 auto;
+	    padding: 10rem 3rem;
+	    padding-top: 3rem;
+	}
+
+	.container{
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+
+	.container p{
+		flex-basis: 50%;
+		order: 3;
+		    margin-top: 0;
+	    padding: 2rem;
+	    padding-top: 0;
+	}
+
+	.container img{
+		flex-basis: 50%;
+		order: 2;
+		width: 50%;
+	}
+
+	.container h1{
+		flex-basis: 100%;
+		order: 1;
+	}
+
+}
+
